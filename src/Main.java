@@ -12,7 +12,8 @@ public class Main {
             try{
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 sum_desired = Integer.parseInt(br.readLine());
-                Atm.countCurrency(sum_desired,5, atm_count.getNotes(), atm_count.getNoteFrequency());
+                Atm.countCurrency(sum_desired,5, atm_count.getNotes(),
+                        atm_count.getNoteFrequency());
             } catch (Exception e){
                 e.printStackTrace();
             }
